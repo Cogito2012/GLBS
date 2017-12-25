@@ -32,11 +32,11 @@ If you find GLBS useful in your research, please consider citing:
 4. [Training and Test](#training-and-test)
 
 ### Requirements
-The code has been tested on Windows 10 (x64) system with MATLAB2013a and MATLAB2016b. To fully make use of our code, you need to prepare these toolkits for MATLAB.
+The code has been tested on Windows 10 (x64) system with MATLAB2013a and MATLAB2016b. To make fully use of our code, you need to prepare these toolkits for MATLAB.
  - **glmnet**. We used [glmnet MATLAB toolkit](http://web.stanford.edu/~hastie/glmnet_matlab) to implement group-lasso algorithm provided by Trevor Hastie at Stanford University. Just unzip glmnet_matlab.zip into MATLAB toolkit directory and add its path to MATLAB.
  - **libsvm**. We used the most widely recognized [libsvm-3.21](https://www.csie.ntu.edu.tw/~cjlin/libsvm) MATLAB interfaces to train Support Vector Machine (SVM) classifier based on GLBS for hyperspectral image classification.
 
-You can also access these toolkit in [Google Drive](https://drive.google.com/drive/folders/1JvXwo2s0BhV9_NMptre4UwY0Rc7Rrz3E) or [Baidu Netdisk](https://pan.baidu.com/s/1kVioSf1)
+You can also access these toolkits in [Google Drive](https://drive.google.com/drive/folders/1JvXwo2s0BhV9_NMptre4UwY0Rc7Rrz3E) or [Baidu Netdisk](https://pan.baidu.com/s/1kVioSf1)
  
 ### Data Preparation
 We implement our proposed GLBS on two representative hyperspectral image dataset, i.e. Indian Pines, Botswana. You can access them and other datasets with MATLAB data format in [GIC Group](http://www.ehu.eus/ccwintco/index.php?title=Hyperspectral_Remote_Sensing_Scenes). 
@@ -51,7 +51,7 @@ Just switch to the path `<ProjectRoot>/GLBS/` as MATLAB working directory, then 
 ### Training and Test
 We have provided the training and test scripts for both GLBS algorithm and its reimplementation on SVM or kNN classifier. Just follow instructions in the head of script files at `<ProjectRoot>/GLBS/`. You can also access the trained models and test results in [Google Drive](https://drive.google.com/drive/folders/1_xAvtp2xMIbT1tPP0ftmIrEO_WiPytDj) or [Baidu Netdisk](https://pan.baidu.com/s/1pLLwwh9).
 
-Since group-lasso based model incorporates iterative search for the best coefficient parameter, which is denoted as \lambda described in equation (6) in our paper, we implemented the 10-folds Cross-Validation methods with glmnet for GLBS. Corresponding code scripts are provided in ``<ProjectRoot>/GLBSCV`, and you can also access the trained models and test results in [Google Drive](https://drive.google.com/drive/folders/1pZMgdnUhKk2etHr1jBLyXFcu_4O1cgKr) or [Baidu Netdisk](https://pan.baidu.com/s/1boIgKzH)
+Since group-lasso based model incorporates iterative search for the best coefficient parameter, which is denoted as \lambda described in equation (6) in our paper, we implemented the 10-folds Cross-Validation methods with glmnet for GLBS. Corresponding code scripts are provided in `<ProjectRoot>/GLBSCV`, and you can also access the trained models and test results in [Google Drive](https://drive.google.com/drive/folders/1pZMgdnUhKk2etHr1jBLyXFcu_4O1cgKr) or [Baidu Netdisk](https://pan.baidu.com/s/1boIgKzH)
 
 
 
